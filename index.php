@@ -44,13 +44,13 @@ if ($_POST['USER_LOGIN'] && $_POST['PASS']) {
 
 if ($_POST['movie_id']) {
     $currentMovie = $movieDocument[$_POST['movie_id']];
-}
 
-// Display current movie
-echo '<div>Ce soir votre film: ' . $currentMovie['title'] . '</div>';
-echo '<div>Description: ' . $currentMovie['description'] . '</div>';
-echo '<div>Genre: ' . $currentMovie['description'];
-foreach ($currentMovie['tags'] as $tag) {
-    echo '<tag>'.$tag.'</tag>';
+    // Display current movie
+    echo '<div>Ce soir votre film: ' . $currentMovie['title'] . '</div>';
+    echo '<div>Description: ' . $currentMovie['description'] . '</div>';
+    echo '<div>Genre: ' . $currentMovie['description'];
+    foreach ($currentMovie['tags'] as $tag) {
+        echo '<tag>' . $tag . '</tag>';
+    }
+    echo '</div>';
 }
-echo '</div>';
