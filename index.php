@@ -54,3 +54,6 @@ if ($_POST['movie_id']) {
     }
     echo '</div>';
 }
+
+// Display footer
+echo '<footer>Goodbye</footer>';
