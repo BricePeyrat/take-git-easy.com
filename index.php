@@ -45,3 +45,7 @@ if ($_POST['USER_LOGIN'] && $_POST['PASS']) {
 if ($_POST['movie_id']) {
     $currentMovie = $movieDocument[$_POST['movie_id']];
 }
+
+// Display current movie
+echo '<div>Ce soir votre film: '.$currentMovie['title'].'</div>';
+echo '<div>Description: '.$currentMovie['description'].'</div>';
