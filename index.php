@@ -1,6 +1,6 @@
 <?php
-const USER_LOGIN = 'Alan';
-const USER_PASS = 'Wake';
+const USER_LOGIN = 'Allan';
+const USER_PASS = 'Theo';
 
 $movieDocument = [
     1 => [
@@ -54,3 +54,6 @@ if ($_POST['movie_id']) {
     }
     echo '</div>';
 }
+
+// Display footer
+echo '<footer>Goodbye</footer>';
