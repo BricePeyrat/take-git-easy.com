@@ -1,4 +1,6 @@
 <?php
+require_once 'render.php';
+
 const USER_LOGIN = 'Alan';
 const USER_PASS = 'Wake';
 
@@ -34,11 +36,9 @@ $movieDocument = [
     ]
 ];
 
-if ($_POST['USER_LOGIN'] && $_POST['PASS']) {
-    if ($_POST['USER_LOGIN'] === USER_LOGIN) {
-        if ($_POST['USER_PASS'] === USER_PASS) {
-            return 'Admin page';
-        }
+if (!empty($_POST['USER_LOGIN']) && !empty($_POST['PASS'])) {
+    if ($_POST['USER_LOGIN'] === USER_LOGIN && $_POST['USER_PASS'] === USER_PASS) {
+        return renderAdminPage('Test');
     }
 }
 
