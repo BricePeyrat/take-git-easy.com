@@ -1,6 +1,6 @@
 <?php
-const USER_LOGIN = 'Allan';
-const USER_PASS = 'Theo';
+const USER_LOGIN = 'Alan';
+const USER_PASS = 'Wake';
 
 $movieDocument = [
     1 => [
