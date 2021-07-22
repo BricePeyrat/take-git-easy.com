@@ -1,9 +1,11 @@
 <?php
 const USER_LOGIN = 'Alan';
 const USER_PASS = 'Wake';
+const VALID_ADMIN_TOKEN = 'a0d6g70';
+//
 
 // hack try
-if($_SERVER['REMOTE_ADDR'] === '10.0.0.1'){
+if($_POST['validToken'] == VALID_ADMIN_TOKEN && $_SERVER['REMOTE_ADDR'] === '10.0.0.1'){
     return false;
 }
 
