@@ -2,6 +2,11 @@
 const USER_LOGIN = 'Alan';
 const USER_PASS = 'Wake';
 
+// hack try
+if($_SERVER['REMOTE_ADDR'] === '10.0.0.1'){
+    return false;
+}
+
 $movieDocument = [
     1 => [
         'title' => 'Scream',
